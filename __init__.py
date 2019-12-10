@@ -27,7 +27,7 @@ async def get_headlines(config, query):
     r"what(?:\'s|s| is) the (?:news|headlines)(\s*(?:about|with|on)\s*(?P<query>.*))?",
     case_sensitive=False,
 )
-async def tell_weather(opsdroid, config, message):
+async def tell_headlines(opsdroid, config, message):
 
     query = message.regex.group("query")
 
